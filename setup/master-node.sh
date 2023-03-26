@@ -18,7 +18,7 @@ fi
 
 blue "Host IP: $HOST_IP"
 
-# curl -sfL https://get.k3s.io | INSTALL_K3S_CHANNEL="v1.25.7+k3s1" sh -
+curl -sfL https://get.k3s.io | INSTALL_K3S_CHANNEL="v1.25.7+k3s1" sh -
 
 blue "Generate kube_config file (root permission required)"
 sudo cp /etc/rancher/k3s/k3s.yaml ./kube_config
