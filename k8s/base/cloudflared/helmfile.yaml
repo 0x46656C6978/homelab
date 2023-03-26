@@ -1,0 +1,7 @@
+releases:
+  - name: cloudflared
+    namespace: cloudflared
+    chart: truecharts/cloudflared
+    version: 3.0.16
+    values:
+      - values.yaml

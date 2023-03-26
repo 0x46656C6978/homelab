@@ -1,0 +1,9 @@
+ingressClass: nginx
+
+ingressClassResource:
+  # -- Name of the ingressClass
+  name: nginx
+  # -- Is this ingressClass enabled or not
+  enabled: true
+  # -- Is this the default ingressClass for the cluster
+  default: false
