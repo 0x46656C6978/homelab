@@ -2,7 +2,10 @@
 ## The story
 After working with Kubernetes for a year, I think it's time to build a cluster at home. There are so many GitHub repositories or youtube tutorials out there that I could use and instantly start. But doing it myself from scratch is more valuable for me. So I created this repo.
 ## Prerequisites
-- cmake
+- cmake (aka make)
+- kubectl
+- helm3
+- helmfile
 ## Deploy
 ### Master node
 ```bash
@@ -21,5 +24,18 @@ Then run your worker node
 ```bash
 make run-worker
 ```
+### Kubernetes cluster
+I don't have a static IP address at home, so the best choice until now is CloudFlare Tunnel - it's fast and free. In my experience with CloudFlare Tunnel, the speed is pretty quick if you want to publish a blog, or in my friend's use case, the media server can stream with a buffer time around seconds.
+
+I'm using TrueCharts to deploy tunnel, so you can [follow these instructions](https://truecharts.org/charts/stable/cloudflared/installation_notes) to get your token. Then update it in `k8s/base/cloudflared/values.yaml`.
+
+After finishing the configuration part, use these commands to deploy our cluster.
+```bash
+# Move to k8s/base directory
+cd k8s/base
+# Run deploy script
+./deploy.sh
+```
+Currently, the script to deploy the k8s cluster still not convenient. I'm still working to make it more friendly and easy to use.
 ## License
 This repository was published under MIT license. Take a look at `LICENSE` file for more detail.
