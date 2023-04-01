@@ -37,5 +37,9 @@ cd k8s/base
 ./deploy.sh
 ```
 Currently, the script to deploy the k8s cluster still not convenient. I'm still working to make it more friendly and easy to use.
+### TODOs
+- [ ] Support PXE boot for OS install
+- [ ] Ansible for server setup
+- [ ] Add more default applications like Gitea, ArgoCD, Tekton,...
 ## License
 This repository was published under MIT license. Take a look at `LICENSE` file for more detail.
