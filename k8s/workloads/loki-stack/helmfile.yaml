@@ -1,0 +1,7 @@
+releases:
+  - name: grafana
+    namespace: system-monitor
+    chart: grafana/loki-stack
+    version: 2.9.10
+    values:
+      - values.yaml

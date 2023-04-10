@@ -1,0 +1,7 @@
+releases:
+  - name: cloudflared
+    namespace: cloudflared
+    chart: kubitodev/cloudflared
+    version: 1.0.2
+    values:
+      - values.yaml
