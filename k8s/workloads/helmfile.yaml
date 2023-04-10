@@ -3,9 +3,6 @@ repositories:
     url: https://charts.helm.sh/stable
   - name: bitnami
     url: https://charts.bitnami.com/bitnami
-  
-  - name: minio
-    url: https://charts.min.io
   - name: gitea
     url: https://dl.gitea.io/charts
 

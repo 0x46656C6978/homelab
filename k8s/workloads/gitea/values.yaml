@@ -1,0 +1,19 @@
+global:
+  postgresql:
+    auth:
+      postgresPassword: yourdbpassword
+
+ingress:
+  enabled: false
+  className: nginx
+  hosts:
+    - host: yourdomain.local
+      paths:
+        - path: /
+          pathType: Prefix
+
+admin:
+  existingSecret:
+  username: gitea_admin
+  password: r8sA8CPHD9!bt6d
+  email: gitea@local.domain

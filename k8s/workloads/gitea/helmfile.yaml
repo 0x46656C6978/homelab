@@ -3,3 +3,5 @@ releases:
     namespace: gitea
     chart: gitea/gitea
     version: 8.0.2
+    values:
+      - values.yaml
