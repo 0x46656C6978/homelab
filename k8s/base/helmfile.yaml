@@ -5,10 +5,7 @@ repositories:
     url: https://kubernetes.github.io/ingress-nginx
   - name: bitnami
     url: https://charts.bitnami.com/bitnami
-  - name: truecharts
-    url: https://charts.truecharts.org
 
 helmfiles:
   - ./cert-manager/helmfile.yaml
   - ./ingress-nginx/helmfile.yaml
-  - ./cloudflared/helmfile.yaml

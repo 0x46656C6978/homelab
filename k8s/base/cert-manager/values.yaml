@@ -1,3 +1,10 @@
+global:
+  leaderElection:
+    namespace: "cert-manager"
+
+prometheus:
+  enabled: false
+
 installCRDs: true
 ingressShim:
   defaultIssuerName: letsencrypt-issuer
