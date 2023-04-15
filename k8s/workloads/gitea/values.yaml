@@ -7,7 +7,7 @@ ingress:
   enabled: false
   className: nginx
   hosts:
-    - host: yourdomain.local
+    - host: gitea.yourdomain.com
       paths:
         - path: /
           pathType: Prefix
@@ -17,3 +17,15 @@ admin:
   username: gitea_admin
   password: r8sA8CPHD9!bt6d
   email: gitea@local.domain
+
+service:
+  ssh:
+    port: 22
+
+gitea:
+  config:
+    server:
+      ROOT_URL: https://gitea.yourdomain.com
+      SSH_PORT: 22
+      SSH_LISTEN_PORT: 22
+      SSH_DOMAIN: git.yourdomain.com
