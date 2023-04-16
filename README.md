@@ -68,11 +68,12 @@ cd k8s/workloads
 # Run deploy script
 ./deploy.sh
 ```
-### Note
+## Note
 Currently, the script to deploy the k8s cluster still not convenient. I'm still working to make it more friendly and easy to use.
-### TODOs
-- [ ] Support PXE boot for OS install
-- [ ] Ansible for server setup
+## TODOs
 - [ ] Add more default applications like Gitea, ArgoCD, Tekton,...
+- [ ] Use global yaml config instead of manual update config at beginning
+- [ ] Ansible for server setup
+- [ ] Support PXE boot for OS install
 ## License
 This repository was published under MIT license. Take a look at `LICENSE` file for more detail.
