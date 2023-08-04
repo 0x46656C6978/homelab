@@ -5,6 +5,9 @@ repositories:
     url: https://charts.bitnami.com/bitnami
   - name: gitea
     url: https://dl.gitea.io/charts
+  - name: jenkins
+    url: https://charts.jenkins.io
 
 helmfiles:
   - ./gitea/helmfile.yaml
+  - ./jenkins/helmfile.yaml

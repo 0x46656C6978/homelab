@@ -1,0 +1,14 @@
+controller:
+  ingress:
+    enabled: false
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: "true"
+    hostName: jenkins.iamfelix.dev
+    tls:
+    - secretName: jenkins.iamfelix.dev-tls
+      hosts:
+        - jenkins.iamfelix.dev
+
+persistence:
+  storageClass: local-path
